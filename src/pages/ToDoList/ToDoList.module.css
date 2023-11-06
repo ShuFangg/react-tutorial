@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contentContainer {
+  padding: 0px 20px 20px 20px;
+  max-width: 800px;
+}
+
+.addItem, .searchItem {
+  margin: 10px;
+  border-bottom:2px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addItem input, .addItem input:focus,
+.searchItem input, .searchItem input:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.addItem span, .searchItem span {
+  color: rgb(139, 139, 139);
+}
+
+@media screen and (max-width: 600px) {
+}

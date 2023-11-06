@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.infoLine {
+  margin-bottom: 5px;
+}
+
+.button {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.gameInfo {
+  margin-left: 50px;
+}
+
+.gameInfoTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .game {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gameInfo {
+    margin-top: 20px; 
+    margin-left: 55px;  
+    margin-bottom: 20px;
+  }
+}
+

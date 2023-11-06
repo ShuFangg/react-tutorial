@@ -1,0 +1,33 @@
+.addItem {
+  border-bottom:2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0 50px 0;
+}
+
+.addItem input, .addItem input:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.activeButton {
+  color: rgb(139, 139, 139);
+}
+
+.disabledButton {
+  color: red;
+}
+
+.addItemSkeleton {
+  border-bottom:2px solid;
+  width: 100%;
+  font-size: 80%;
+}
+
+@media screen and (max-width: 600px) {
+}

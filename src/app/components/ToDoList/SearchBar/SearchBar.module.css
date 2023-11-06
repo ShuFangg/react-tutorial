@@ -1,0 +1,33 @@
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.searchInputContainer {
+margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .searchBar {
+    flex-direction: column;
+  }
+
+  .searchInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    width: 100%;
+  }
+
+  .searchSelectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px 10px;
+    width: 100%;
+  }
+}

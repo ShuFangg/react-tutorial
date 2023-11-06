@@ -1,0 +1,23 @@
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameText {
+  padding-left: 10px;
+  text-align: left;
+  width: 60%;
+}
+
+.activeNameText {
+  color: red;
+  padding-left: 10px;
+  text-align: left;
+  width: 60%;
+}
+
+.priceText {
+  margin-left: 15%;
+  width: 40%;
+}
+

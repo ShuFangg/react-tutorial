@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  width: 50%;
+  border: 1px black solid;
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .container {
+    width: 100%;
+    margin: 0px 10%;
+  }
+}

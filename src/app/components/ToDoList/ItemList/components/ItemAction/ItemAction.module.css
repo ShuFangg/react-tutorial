@@ -1,0 +1,23 @@
+.actionColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.editColumn {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.disabledEditColumn {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.disabledEditColumn span { 
+  color: red;
+}

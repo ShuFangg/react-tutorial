@@ -1,0 +1,23 @@
+.searchItem {
+  border-bottom:2px solid;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.searchItem input, .searchItem input:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.searchItem span {
+  color: rgb(139, 139, 139);
+}
+
+@media screen and (max-width: 600px) {
+  .searchItem {
+    width: 100%;
+  }
+}
