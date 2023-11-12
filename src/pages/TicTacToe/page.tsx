@@ -43,7 +43,7 @@ const TicTacToe = () => {
       </div>
       <div className={styles.gameInfo}>
         <div className={styles.gameInfoTitle}>
-          <p>Game's move:</p>
+          <p>Game move:</p>
           <span
             className="material-icons"
             onClick={() => setGameInfo(!gameInfo)}

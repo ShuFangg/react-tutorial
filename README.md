@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Other than to do list, the Tic Tac Toe and Filterable Product Table are referred from the React website (https://react.dev/learn).
+
+## Tic Tac Toe
+
+1. This Tic-Tac-Toe is developed based on the tutorial in https://react.dev/learn/tutorial-tic-tac-toe.
+2. However, 3 features are added here to improve the game:
+   - A button "Game move" is added for user to expand or close to view the game steps,
+   - The "Game start" button in the "Game move" has improved with the functionality for user to restart the game.
+   - For the information of the game, instead of just showing "Next player is: " and "Winner : ", I have added "Game start" to indicate the game has start and "Draw" to indicate the game is drawn.
+
+## Filterable Product Table
+
+1. This Filterable Product Table is developed based on the tutorial in https://react.dev/learn/thinking-in-react.
+2. However, instead of following their code, I have developed it by myself by referring to their output and components architecture.
+
+## To Do List
+
+1. Please be note that user need to set up your own environment variable that include the API key and API URL.
+
 ## Getting Started
 
 First, run the development server:
@@ -13,22 +32,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

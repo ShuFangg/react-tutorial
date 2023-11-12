@@ -15,7 +15,8 @@ interface Item {
   dateTime: Date;
 }
 
-const BASE_URL = "https://sf-service.onrender.com";
+const apiUrl = process.env.NEXT_PUBLIC_BASE_URL;
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
 const ToDoList = () => {
   const [items, setItems] = useState<Item[]>([]);
@@ -28,10 +29,10 @@ const ToDoList = () => {
     try {
       setIsFetching(true);
 
-      const response = await fetch(`${BASE_URL}/todos`, {
+      const response = await fetch(`${apiUrl}/todos`, {
         headers: {
           "Content-Type": "application/json",
-          authorization: "e6NCwEhWT8pR8K3vhNQcHUadWH96",
+          authorization: `${apiKey}`,
         },
       });
 
@@ -64,12 +65,12 @@ const ToDoList = () => {
     setItems([...items, newItem]);
 
     try {
-      const response = await fetch(`${BASE_URL}/todos`, {
+      const response = await fetch(`${apiUrl}/todos`, {
         method: "post",
         body: JSON.stringify(newItem),
         headers: {
           "Content-Type": "application/json",
-          authorization: "e6NCwEhWT8pR8K3vhNQcHUadWH96",
+          authorization: `${apiKey}`,
         },
       });
 
@@ -91,12 +92,12 @@ const ToDoList = () => {
       );
       setItems(updatedItem);
 
-      const response = await fetch(`${BASE_URL}/todos/${id}`, {
+      const response = await fetch(`${apiUrl}/todos/${id}`, {
         method: "PATCH",
         body: JSON.stringify({ isComplete: !value }),
         headers: {
           "Content-Type": "application/json",
-          authorization: "e6NCwEhWT8pR8K3vhNQcHUadWH96",
+          authorization: `${apiKey}`,
         },
       });
 
@@ -134,12 +135,12 @@ const ToDoList = () => {
       setItems(editItem);
 
       if (value.trim() !== "") {
-        const response = await fetch(`${BASE_URL}/todos/${id}`, {
+        const response = await fetch(`${apiUrl}/todos/${id}`, {
           method: "PATCH",
           body: JSON.stringify({ name: value }),
           headers: {
             "Content-Type": "application/json",
-            authorization: "e6NCwEhWT8pR8K3vhNQcHUadWH96",
+            authorization: `${apiKey}`,
           },
         });
 
@@ -176,10 +177,10 @@ const ToDoList = () => {
       const filterDeleteItem = items.filter((item) => item.id !== id);
       setItems(filterDeleteItem);
 
-      const response = await fetch(`${BASE_URL}/todos/${id}`, {
+      const response = await fetch(`${apiUrl}/todos/${id}`, {
         method: "DELETE",
         headers: {
-          authorization: "e6NCwEhWT8pR8K3vhNQcHUadWH96",
+          authorization: `${apiKey}`,
         },
       });
 

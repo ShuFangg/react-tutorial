@@ -24,7 +24,7 @@ const ProductTable = ({ filterText, inStockOnly, stock }: Props) => {
       <div>
         {[...new Set(stock.map(({ category }) => category))].map(
           (stockCategory) => (
-            <div>
+            <div key={stockCategory}>
               <ProductCategoryRow category={stockCategory} />
               {stock
                 .filter(
